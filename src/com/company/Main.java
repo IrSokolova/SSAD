@@ -1,4 +1,4 @@
-package com.company;
+package Code;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -72,6 +72,8 @@ class Admin extends Account {
     public Admin(String login, String password) {
         super(login, password);
     }
+
+
 }
 
 class AIShop {
@@ -140,8 +142,37 @@ class Item {
 }
 
 interface AbstractFactory {
+    Item createTopCloth();
+
+    Item createButtomWear();
     // CreateItems...
     // Irochka
+}
+
+class FirstFactory implements AbstractFactory{
+
+    @Override
+    public Item createTopCloth() {
+        return null;
+    }
+
+    @Override
+    public Item createButtomWear() {
+        return null;
+    }
+}
+
+class SecondFactory implements AbstractFactory{
+
+    @Override
+    public Item createTopCloth() {
+        return null;
+    }
+
+    @Override
+    public Item createButtomWear() {
+        return null;
+    }
 }
 
 class Random {
