@@ -63,7 +63,7 @@ class User extends Account {
     }
 
     public void clearCart() {
-        cart.removeAll(cart);
+        cart.clear();
     }
 
 }
